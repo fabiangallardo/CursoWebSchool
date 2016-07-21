@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-.small-image{
+.clearfix{
  width: 100px;
 }
 
