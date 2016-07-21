@@ -1,0 +1,6 @@
+{
+  "directory": "bower_components",
+  "https-proxy" : "http://exa46913:cbavates11S@amba-proxy.ctimovil.net:8083",
+  "http-proxy"  : "http://exa46913:cbavates11S@amba-proxy.ctimovil.net:8083",
+  "strict-ssl": false
+}

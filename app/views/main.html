@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>Mis tareas</h1>
+  
+<div ui-sortable ng-model="tareas">
+    <p class="input-group" ng-repeat="tarea in tareas" class="form-group" style="padding:5px 10px;cursor:move;">
+   <input  type="text" ng-model="tarea" class="form-control">
+       <span class="input-group-btn">    <button type="submit" class="btn btn-danger" ng-click="deleteTask($index)">Delete</button>
+          </span>
+     </p>
+</div>
+<br>
+
+   <form ng-submit="addTask()" method="POST" class="form-horizontal" role="form">
+       <div class="form-group">
+         <legend>agregar Tarea</legend>
+       </div>
+   
+       
+     <div class="form-group">
+         <div class="col-sm-10 col-sm-offset-2">
+            <input type="text" ng-model="tarea" placeholder="agregar el nombre de una nueva tarea:">
+         </div>
+       </div>
+   
+       <div class="form-group">
+         <div class="col-sm-10 col-sm-offset-2">
+           <button type="submit" class="btn btn-primary">Agreagar</button>
+         </div>
+       </div>
+   </form>
+</div>
